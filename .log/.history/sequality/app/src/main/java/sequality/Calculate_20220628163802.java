@@ -9,5 +9,12 @@ public class Calculate {
     return (double) ((x + y)) / 2;
   }
 
-
+  public int sumall(int x, int y) {
+    if (x > y) {
+      return 0;
+    }
+    else {
+      return x+sum()
+    }
+  }
 }

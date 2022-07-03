@@ -9,7 +9,8 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 6;
     assertEquals(expected, calculate.sum(3, 3));
-    double expected2 = 2.5;
-    assertEquals(expected2, calculate.ave(3, 2), 0);
+    double expected2 = 2.511111;
+    assertEquals(expected2, calculate.ave(3, 2));
+
   }
 }

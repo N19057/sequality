@@ -27,21 +27,16 @@ public class AppTest {
     int out3 = 0;
     int out4 = 0;
     for (int i = testin1; i <= testin2; i++) {
-      out1 = sumavetest.sum(out1, i);
+      out1 = c.sum(out1, i);
       if (i % 2 != 0) {
-        out3 = sumavetest.sum(out3, i);
+        out3 = c.sum(out3, i);
       } else if (i % 2 == 0) {
-        out4 = sumavetest.sum(out4, i);
+        out4 = c.sum(out4, i);
       }
     }
-    out2 = (double) (out1) / (double) (testin2 - testin1 + 1);
-    teststring = "Sum of " + testin1 + " to " + testin2 + " is " + out1
+    out2 = (double) (out1) / (double) (in2 - in1 + 1);
+    sumave = "Sum of " + in1 + " to " + in2 + " is " + out1
         + ". Average is " + out2 + '.';
-
-    assertEquals("Sum of 1 to 2 is 3. Average is 1.5.", teststring);
-
-    assertEquals(out3, 1);
-    assertEquals(out4, 2);
 
   }
 }
